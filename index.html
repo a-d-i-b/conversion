@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversion d'unités informatiques</title>
+</head>
+<body>
+
+    <header>
+        <h1>Conversion d'unités informatiques</h1>
+    </header>
+
+    <main>
+        <p>Entrez une valeur puis sélectionnez une unité informatique :</p>
+        <label for="valeur">Valeur : </label>
+        <input type="text" id="valeur" size="10">
+        <select name="unite" id="unite">
+            <option value="Ko">Ko</option>
+            <option value="Mo">Mo</option>
+            <option value="Go">Go</option>
+            <option value="To">To</option>
+        </select>
+        <span>&rArr;</span>
+        <input type="text" id="resultat" size="10" readonly>
+        <select name="conversion" id="conversion">
+            <option value="Ko">Ko</option>
+            <option value="Mo">Mo</option>
+            <option value="Go">Go</option>
+            <option value="To">To</option>
+        </select>
+    </main>
+
+    <footer>
+        <p>Projet simple réalisé dans le cadre du cours <a href="https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github">Git &amp; GitHub</a> d'<strong>openclassrooms.com</strong>.</p>
+    </footer>
+    
+</body>
+</html>
