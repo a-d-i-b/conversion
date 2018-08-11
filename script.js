@@ -13,7 +13,6 @@ function conversion(valeur, uniteSource, uniteCible)
     if (isNaN(valeur)) return "";
 
     var coeff = coeffConversion[uniteCible] - coeffConversion[uniteSource];
-    console.log(coeff);
 
     if (coeff < 0)
     {
@@ -37,19 +36,13 @@ function onConversion(e)
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    console.log("Page chargée.");
-
     var txtValeur = document.getElementById("txtValeur");
-    console.log(txtValeur);
 
     var txtResultat = document.getElementById("txtResultat");
-    console.log(txtResultat);
 
     var optUnite = document.getElementById("optUnite");
-    console.log(optUnite.value);
 
     var optConversion = document.getElementById("optConversion");
-    console.log(optConversion.value);
 
     txtValeur.addEventListener("input", onConversion);
 
