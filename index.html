@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Conversion d'unités informatiques</title>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -14,19 +15,19 @@
 
     <main>
         <p>Entrez une valeur puis sélectionnez une unité informatique :</p>
-        <label for="valeur">Valeur : </label>
-        <input type="text" id="valeur" size="10">
-        <select name="unite" id="unite">
+        <label for="txtValeur">Valeur : </label>
+        <input type="text" id="txtValeur" size="10">
+        <select id="optUnite">
             <option value="Ko">Ko</option>
             <option value="Mo">Mo</option>
             <option value="Go">Go</option>
             <option value="To">To</option>
         </select>
         <span>&rArr;</span>
-        <input type="text" id="resultat" size="10" readonly>
-        <select name="conversion" id="conversion">
+        <input type="text" id="txtResultat" size="10" readonly>
+        <select id="optConversion">
             <option value="Ko">Ko</option>
-            <option value="Mo">Mo</option>
+            <option value="Mo" selected>Mo</option>
             <option value="Go">Go</option>
             <option value="To">To</option>
         </select>
